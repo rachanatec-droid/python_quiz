@@ -52,7 +52,7 @@ st.sidebar.write("Welcome! Find your perfect custom fit here.")
 page = st.sidebar.radio("Go to:", ["Browse Catalog", "Place Custom Order"])
 
 # Business Contact details
-WHATSAPP_NUMBER = "919999999999"  # Replace with your actual WhatsApp business number (include country code)
+WHATSAPP_NUMBER = "916361120962"  # Replace with your actual WhatsApp business number (include country code)
 
 # 4. Main App Pages
 if page == "Browse Catalog":
@@ -75,7 +75,7 @@ if page == "Browse Catalog":
     for i, kurti in enumerate(filtered_catalog):
         col = cols[i % 2]
         with col:
-            st.image(kurti["image"], use_column_width=True)
+            st.image(kurti["image"], use_container_width=True)
             st.subheader(kurti["name"])
             st.write(f"**Price:** ₹{kurti['price']}")
             st.write(kurti["description"])
